@@ -1,0 +1,77 @@
+#locais {
+    background-color: #D2AE5D;
+    text-align: center;
+    padding: 30px 20px 80px; /* Ajuste do padding */
+}
+
+.locais-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px; /* Ajusta o espaço entre os quadros */
+    flex-wrap: wrap;
+    padding: 50px 20px 70px;
+}
+
+.local {
+    background-color: #CDB973;
+    background-image: linear-gradient(135deg, #643F23, #CDB973); /* Gradiente sutil */
+    padding: 24px;
+    border-radius: 16px; /* Bordas mais arredondadas para suavizar */
+    flex: 1;
+    min-width: 450px;
+    max-width: 300px;
+    text-align: left;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* Sombra mais suave e elegante */
+    margin: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Animação no hover */
+    color: #ffffff; /* Cor do texto para contraste */
+    font-family: 'Arial', sans-serif; /* Fonte mais moderna */
+}
+
+.local:hover {
+    transform: translateY(-6px); /* Eleva o card no hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+}
+
+/* Estilo das imagens */
+.local img {
+    width: 100%;
+    height: 200px; /* Tamanho fixo para padronizar as imagens */
+    object-fit: cover; /* Mantém a imagem centralizada e cortada conforme necessário */
+    border-radius: 12px; /* Bordas arredondadas para um visual coeso com o card */
+    margin-bottom: 15px;
+}
+
+/* Estilo da área de informações */
+.local-info {
+    color: #000000;
+    text-align: left;
+}
+
+.local-info h3 {
+    font-family: 'Montserrat', serif;;
+    font-size: 36px; /* Aumenta o tamanho da fonte para um destaque maior */
+    margin-bottom: 12px; /* Aumenta o espaçamento inferior */
+    color: #1A1E1B; /* Um tom de cor mais suave e sofisticado */
+    font-weight: 700; /* Negrito para maior impacto */
+    text-transform: uppercase; /* Títulos em maiúsculas para um toque moderno */
+    letter-spacing: 0.5px; /* Aumenta o espaçamento entre letras */
+    text-align: center; /* Centraliza o texto */
+
+}
+
+.local-info p {
+    font-family: 'Montserrat', serif; /* Corrige a fonte para 'sans-serif' */
+    font-size: 18px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+    color: #333; /* Um tom de cinza escuro para suavizar o contraste */
+    line-height: 1.8; /* Melhora a legibilidade com maior espaçamento */
+    margin: 0; /* Remove margens para melhor alinhamento */
+    padding: 0; /* Remove padding para melhor alinhamento */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Adiciona um efeito sutil ao passar o mouse */
+.local-info:hover h3 {
+    color: #E18C1A; /* Muda a cor do título no hover para um tom quente */
+    transition: color 0.3s ease; /* Suaviza a transição de cor */
+}

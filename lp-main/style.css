@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script', cursive; /* Para Dancing Script nos headers */
+    font-size: 70px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.hero {
+    background-image: url('src/img/capa_preta.jpg'); /* Caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo no lado direito */
+    align-items: flex-start; /* Alinha o conteúdo no topo */
+    text-align: center;
+    padding: 100px; /* Padding interno para ajustar espaçamento das bordas da seção */
+}
+.hero img{
+    width: 400px;
+    height: 200px; 
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 1); /* Fundo preto com 70% de transparência */
+    border-radius: 30px; /* Bordas arredondadas (opcional) */
+    color: white; /* Texto branco */
+}
+
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero-content p {
+    font-family: 'Montserrat', serif; /* Altera a fonte para Montserrat */
+    font-size: 20px; /* Define o tamanho da fonte */
+    max-width: 500px; /* Define a largura máxima do parágrafo */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas para legibilidade */
+    margin: 20px 0; /* Espaçamento em cima e embaixo do parágrafo */
+    
+    /* Estilizações adicionais */
+    padding: 20px; /* Adiciona espaçamento interno ao redor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    color: #f5f5f5; /* Cor do texto para contraste */
+    text-align: justify; /* Justifica o texto para alinhamento elegante */
+    backdrop-filter: blur(5px); /* Adiciona um leve desfoque no fundo para efeito moderno */
+}
+
+
+
+.cta-button {
+    background: linear-gradient(135deg, #996923, #835737); /* Adiciona um gradiente para dar mais profundidade */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600; /* Torna o texto um pouco mais grosso */
+    border-radius: 8px; /* Bordas mais arredondadas para um toque suave */
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para dar profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Animação suave para transformações */
+}
+
+/* Efeito hover */
+.cta-button:hover {
+    background: linear-gradient(135deg, #996923, #a06440); /* Gradiente mais claro no hover */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Intensifica a sombra ao passar o mouse */
+}
+
+/* Efeito de clique */
+.cta-button:active {
+    transform: scale(1); /* Volta ao tamanho original para indicar o clique */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra reduzida durante o clique */
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.feature {
+    margin: 20px 0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

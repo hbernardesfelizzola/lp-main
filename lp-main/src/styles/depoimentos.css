@@ -1,0 +1,56 @@
+#depoimentos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.depoimentos-container {
+    display: flex;
+    justify-content: space-between; /* Espaça os depoimentos uniformemente */
+    gap: 20px; /* Espaçamento entre as divs de depoimento */
+    flex-wrap: wrap; /* Quebra linha em telas menores */
+}
+
+.depoimento {
+    background-color: #ffffff; /* Cor branca para um visual mais limpo */
+    padding: 24px;
+    border-radius: 16px; /* Bordas mais arredondadas para um visual suave */
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais suave e ampla */
+    text-align: left;
+    font-family: 'Arial', sans-serif; /* Fonte elegante e moderna */
+    color: #333; /* Cor do texto mais suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação para o hover */
+}
+
+/* Efeito ao passar o mouse */
+.depoimento:hover {
+    transform: translateY(-8px); /* Eleva o elemento levemente */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Intensifica a sombra */
+}
+
+/* Estilo para o texto principal */
+.depoimento p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Estilo para o nome do autor do depoimento */
+.depoimento .autor {
+    font-weight: bold;
+    margin-top: 12px;
+    display: block;
+    color: #756745; /* Cor contrastante para destacar o nome */
+    font-style: italic;
+    text-align: right; /* Alinha o nome à direita */
+}
+.depoimento p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.depoimento span {
+    font-weight: bold;
+    color: #555;
+}

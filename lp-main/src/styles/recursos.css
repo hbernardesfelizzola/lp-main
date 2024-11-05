@@ -1,0 +1,44 @@
+#recursos {
+    background-color: #CDB973;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.recursos-container {
+    display: flex; /* Alinha as divs lado a lado */
+    justify-content: space-between; /* Distribui o espaço entre as divs */
+    gap: 20px; /* Espaço entre as divs */
+    flex-wrap: wrap; /* Permite que as divs quebrem linha se a tela for pequena */
+}
+
+.feature {
+    max-width: 540px; /* Manter a largura máxima dos posts */
+    height: 950px; /* Defina a altura fixa desejada para os posts */
+    margin: 80px;
+    background: #FFF;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15);
+    overflow: hidden; /* Para ocultar qualquer conteúdo que ultrapasse */
+    margin-bottom: 50px;
+    transition: transform 0.3s ease; /* Adiciona a transição suave */
+}
+
+.feature:hover {
+    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+}
+
+.instagram-media {
+    max-width: 100%; /* Garante que os posts ocupem toda a largura disponível */
+    border: none; /* Remove borda padrão */
+    border-radius: 10px; /* Mesma borda arredondada dos posts */
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.feature p {
+    font-size: 16px;
+}
